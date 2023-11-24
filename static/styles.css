@@ -1,10 +1,45 @@
-.spinner{
+.spinner {
+  position: absolute;
+  left: 90%;
+
   font-size: 140px;
+  padding-bottom: 10px;
+
+  animation: rotateSpinner 5s linear infinite;
 }
+
+@keyframes rotateSpinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .spinner:after {
   content: '◌';
 }
 
 #chart {
     border: 1px solid black;
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.check-btn {
+  margin: 50px 0 0 10px;
+  cursor: pointer;
+}
+
+.search-container {
+  margin: 30px 0 0 10px;
+}
+
+.search-input {
+  width: 7%;
+}
+
+.search-btn {
+  cursor: pointer;
 }
